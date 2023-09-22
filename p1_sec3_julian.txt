@@ -1,0 +1,76 @@
+(base) jr@MacBook-Air Project 1 % git clone https://github.com/samayers/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 14 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (14/14), done.
+(base) jr@MacBook-Air Project 1 % ls
+GitHub-Collaboration-Practice	README.md			p1_text_file.txt
+(base) jr@MacBook-Air Project 1 % cd GitHub-Collaboration-Practice
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git checkout -b julian_branch
+Switched to a new branch 'julian_branch'
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % cd -
+~/Desktop/Computational-Social-Science-Projects./Project 1
+(base) jr@MacBook-Air Project 1 % ls
+GitHub-Collaboration-Practice	README.md			p1_text_file.txt
+(base) jr@MacBook-Air Project 1 % cd GitHub-Collaboration-Practice
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % ls
+README.md		group_project.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git branch
+* julian_branch
+  main
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git checkout julian_branch
+Already on 'julian_branch'
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git merge origin/main
+Already up to date.
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git push origin julian_branch
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (14/14), 2.94 KiB | 2.94 MiB/s, done.
+Total 14 (delta 0), reused 14 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'julian_branch' on GitHub by visiting:
+remote:      https://github.com/samayers/GitHub-Collaboration-Practice/pull/new/julian_branch
+remote: 
+To https://github.com/samayers/GitHub-Collaboration-Practice.git
+ * [new branch]      julian_branch -> julian_branch
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % ls
+README.md		group_project.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % vim group_project.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git log --graph --online --all
+fatal: unrecognized argument: --online
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git log --graph --oneline --all
+*   a5695c3 (HEAD -> julian_branch, origin/main, origin/julian_branch, origin/HEAD, main) Merge pull request #1 from samayers/sams_branch
+|\  
+| * 6e9437b (origin/sams_branch) adding title to first line of document
+|/  
+* d25c8e5 Commiting blank txt file
+* c6f0b2a Delete Group Project
+* 3d71901 Create Group Project
+* ae8bfa0 Initial commit
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % vim group_project.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git status
+On branch julian_branch
+nothing to commit, working tree clean
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git branch
+* julian_branch
+  main
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git fetch origin
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 937 bytes | 187.00 KiB/s, done.
+From https://github.com/samayers/GitHub-Collaboration-Practice
+   a5695c3..35b91cb  main        -> origin/main
+   6e9437b..371cd87  sams_branch -> origin/sams_branch
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git merge origin/main
+Updating a5695c3..35b91cb
+Fast-forward
+ group_project.txt | 1 +
+ 1 file changed, 1 insertion(+)
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % vim group_project.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % vim p1_sec3_julian.txt
