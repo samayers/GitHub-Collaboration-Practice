@@ -1,4 +1,3 @@
-
 cd Documents/CSS
 git clone https://github.com/samayers/GitHub-Collaboration-Practice.git
 cd GitHub-Collaboration-Practice
@@ -8,14 +7,13 @@ git status
 git add -A
 git commit -m "Ading topic"
 git push -u origin sams_branch
-#Adding comment on my program and research interests 
+#Adding comment on my program and research interests
 nano group_project.txt
 git status
 git add -A
 git commit -m "Adding my program and research interests"
-git push 
+git push
 touch sams_collaboration_code.txt
 nano sams_collaboration_code.txt
 git add -A
-git commit -m "First commit of my collaboration code"
-git push
+
