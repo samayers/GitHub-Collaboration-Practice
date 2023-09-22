@@ -74,3 +74,28 @@ Fast-forward
  1 file changed, 1 insertion(+)
 (base) jr@MacBook-Air GitHub-Collaboration-Practice % vim group_project.txt
 (base) jr@MacBook-Air GitHub-Collaboration-Practice % vim p1_sec3_julian.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % vim p1_sec3_julian.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git add p1_sec3_julian.txt                                            
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git status
+On branch julian_branch
+Your branch is up to date with 'origin/julian_branch'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   p1_sec3_julian.txt
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git commit -m "Complete project section code minus this code to a,c,p in p1_sec3_julian.txt"
+[julian_branch 7150062] Complete project section code minus this code to a,c,p in p1_sec3_julian.txt
+ 1 file changed, 76 insertions(+)
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % git push -u origin julian_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.25 KiB | 1.25 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/samayers/GitHub-Collaboration-Practice.git
+   4d938be..7150062  julian_branch -> julian_branch
+branch 'julian_branch' set up to track 'origin/julian_branch'.
+(base) jr@MacBook-Air GitHub-Collaboration-Practice % 
+
