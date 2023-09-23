@@ -1,0 +1,105 @@
+MSalman@LAPTOP-MSalman MINGW64 ~
+$ cd desktop
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop
+$ cd my_css_projects
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ git clone https://github.com/samayers/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 27 (delta 4), reused 24 (delta 2), pack-reused 0
+Receiving objects: 100% (27/27), 6.18 KiB | 904.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ ls
+GitHub-Collaboration-Practice/
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ cd github-collaboration-practice
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (main)
+$ ls
+README.md  group_project.txt  p1_sec3_julian.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (main)
+$ git checkout -b Mirays_branch
+Switched to a new branch 'Mirays_branch'
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ cd github-collaboration-project
+bash: cd: github-collaboration-project: No such file or directory
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ ls
+README.md  group_project.txt  p1_sec3_julian.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ nano group_project.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git status
+On branch Mirays_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   group_project.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git add group_project.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git status
+On branch Mirays_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   group_project.txt
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git commit -m "Added my degree program"
+[Mirays_branch e43450f] Added my degree program
+ 1 file changed, 5 insertions(+)
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git push
+fatal: The current branch Mirays_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Mirays_branch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git push -- set-upstream origin Mirays_branch
+fatal: 'set-upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git push -u origin Mirays_branch
+fatal: credential-cache unavailable; no unix socket support
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 516 bytes | 516.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Mirays_branch' on GitHub by visiting:
+remote:      https://github.com/samayers/GitHub-Collaboration-Practice/pull/new/
+Mirays_branch
+remote:
+To https://github.com/samayers/GitHub-Collaboration-Practice.git
+ * [new branch]      Mirays_branch -> Mirays_branch
+branch 'Mirays_branch' set up to track 'origin/Mirays_branch'.
+
