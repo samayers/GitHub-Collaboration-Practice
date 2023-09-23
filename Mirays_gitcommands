@@ -1,3 +1,6 @@
+22. September 2023
+
+
 MSalman@LAPTOP-MSalman MINGW64 ~
 $ cd desktop
 
@@ -28,10 +31,6 @@ README.md  group_project.txt  p1_sec3_julian.txt
 MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (main)
 $ git checkout -b Mirays_branch
 Switched to a new branch 'Mirays_branch'
-
-MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
-$ cd github-collaboration-project
-bash: cd: github-collaboration-project: No such file or directory
 
 MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
 $ ls
@@ -67,25 +66,6 @@ $ git commit -m "Added my degree program"
  1 file changed, 5 insertions(+)
 
 MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
-$ git push
-fatal: The current branch Mirays_branch has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin Mirays_branch
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
-
-
-MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
-$ git push -- set-upstream origin Mirays_branch
-fatal: 'set-upstream' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-
-MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
 $ git push -u origin Mirays_branch
 fatal: credential-cache unavailable; no unix socket support
 Enumerating objects: 5, done.
@@ -102,4 +82,67 @@ remote:
 To https://github.com/samayers/GitHub-Collaboration-Practice.git
  * [new branch]      Mirays_branch -> Mirays_branch
 branch 'Mirays_branch' set up to track 'origin/Mirays_branch'.
+
+
+
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~
+$ cd desktop
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop
+$ cd my_css_projects
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ ls
+GitHub-Collaboration-Practice/
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ git clone https://github.com/samayers/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 48, done.
+remote: Counting objects: 100% (48/48), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 48 (delta 12), reused 35 (delta 5), pack-reused 0
+Receiving objects: 100% (48/48), 10.34 KiB | 392.00 KiB/s, done.
+Resolving deltas: 100% (12/12), done.
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ ls
+GitHub-Collaboration-Practice/  archive/
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ cd GitHub-Collaboration-Practice
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ ls
+README.md  group_project.txt  p1_sec3_julian.txt  sams_collaboration_code.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ nano Mirays_gitcommands
+
+
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ ls
+Mirays_gitcommands  README.md  group_project.txt  p1_sec3_julian.txt  sams_collaboration_code.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ git checkout -b Mirays_second_branch
+Switched to a new branch 'Mirays_second_branch'
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (Mirays_second_branch)
+$ ls
+Mirays_gitcommands  README.md  group_project.txt  p1_sec3_julian.txt  sams_collaboration_code.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (Mirays_second_branch)
+$ nano Mirays_gitcommands
+
+NEXT STEPS
+$ git status
+$ git add Mirays_gitcommands
+$ git status
+$ git commit -m "Added txt-file with my git commands"
+$ git push -u origin Mirays_branch 
 
