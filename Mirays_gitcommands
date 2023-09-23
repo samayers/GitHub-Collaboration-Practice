@@ -1,0 +1,148 @@
+22. September 2023
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~
+$ cd desktop
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop
+$ cd my_css_projects
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ git clone https://github.com/samayers/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 27 (delta 4), reused 24 (delta 2), pack-reused 0
+Receiving objects: 100% (27/27), 6.18 KiB | 904.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ ls
+GitHub-Collaboration-Practice/
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ cd github-collaboration-practice
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (main)
+$ ls
+README.md  group_project.txt  p1_sec3_julian.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (main)
+$ git checkout -b Mirays_branch
+Switched to a new branch 'Mirays_branch'
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ ls
+README.md  group_project.txt  p1_sec3_julian.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ nano group_project.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git status
+On branch Mirays_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   group_project.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git add group_project.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git status
+On branch Mirays_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   group_project.txt
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git commit -m "Added my degree program"
+[Mirays_branch e43450f] Added my degree program
+ 1 file changed, 5 insertions(+)
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/github-collaboration-practice (Mirays_branch)
+$ git push -u origin Mirays_branch
+fatal: credential-cache unavailable; no unix socket support
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 516 bytes | 516.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Mirays_branch' on GitHub by visiting:
+remote:      https://github.com/samayers/GitHub-Collaboration-Practice/pull/new/
+Mirays_branch
+remote:
+To https://github.com/samayers/GitHub-Collaboration-Practice.git
+ * [new branch]      Mirays_branch -> Mirays_branch
+branch 'Mirays_branch' set up to track 'origin/Mirays_branch'.
+
+
+
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~
+$ cd desktop
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop
+$ cd my_css_projects
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ ls
+GitHub-Collaboration-Practice/
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ git clone https://github.com/samayers/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 48, done.
+remote: Counting objects: 100% (48/48), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 48 (delta 12), reused 35 (delta 5), pack-reused 0
+Receiving objects: 100% (48/48), 10.34 KiB | 392.00 KiB/s, done.
+Resolving deltas: 100% (12/12), done.
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ ls
+GitHub-Collaboration-Practice/  archive/
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects
+$ cd GitHub-Collaboration-Practice
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ ls
+README.md  group_project.txt  p1_sec3_julian.txt  sams_collaboration_code.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ nano Mirays_gitcommands
+
+
+
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ ls
+Mirays_gitcommands  README.md  group_project.txt  p1_sec3_julian.txt  sams_collaboration_code.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (main)
+$ git checkout -b Mirays_second_branch
+Switched to a new branch 'Mirays_second_branch'
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (Mirays_second_branch)
+$ ls
+Mirays_gitcommands  README.md  group_project.txt  p1_sec3_julian.txt  sams_collaboration_code.txt
+
+MSalman@LAPTOP-MSalman MINGW64 ~/desktop/my_css_projects/GitHub-Collaboration-Practice (Mirays_second_branch)
+$ nano Mirays_gitcommands
+
+NEXT STEPS
+$ git status
+$ git add Mirays_gitcommands
+$ git status
+$ git commit -m "Added txt-file with my git commands"
+$ git push -u origin Mirays_branch 
+
